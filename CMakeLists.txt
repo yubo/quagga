@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 2.6)
 
 add_definitions(-I${CMAKE_CURRENT_SOURCE_DIR} -I${CMAKE_CURRENT_SOURCE_DIR}/zebra -I${CMAKE_CURRENT_SOURCE_DIR}/zebra -I${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
-add_definitions(-DHAVE_CONFIG_H -DSYSCONFDIR="/usr/local/etc/" -DMULTIPATH_NUM=1 -fPIE -fno-omit-frame-pointer -std=gnu99 -Wall -Wsign-compare -Wpointer-arith -Wbad-function-cast -Wwrite-strings -Wmissing-prototypes -Wmissing-declarations -Wchar-subscripts -Wcast-qual -fPIC -Wno-unused-result -Wno-cast-qual)
+add_definitions(-DHAVE_CONFIG_H -DSYSCONFDIR="/usr/local/etc/" -DMULTIPATH_NUM=1 -fno-omit-frame-pointer -std=gnu99 -Wall -Wsign-compare -Wpointer-arith -Wbad-function-cast -Wwrite-strings -Wmissing-prototypes -Wmissing-declarations -Wchar-subscripts -Wcast-qual -Wno-unused-result -Wno-cast-qual -fPIC)
 
 if(DEBUG)
 	add_definitions(-DDEBUG -g -O0)
