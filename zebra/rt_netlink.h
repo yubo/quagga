@@ -37,6 +37,9 @@ extern const char *nl_msg_type_to_str(uint16_t msg_type);
 
 extern const char *nl_rtproto_to_str(u_char rtproto);
 
+extern int interface_lookup_netlink(void);
+extern int netlink_route_read(void);
+
 #endif /* HAVE_NETLINK */
 
 #endif /* _ZEBRA_RT_NETLINK_H */

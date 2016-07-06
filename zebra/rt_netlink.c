@@ -1347,6 +1347,7 @@ static int netlink_talk(struct nlmsghdr *n, struct nlsock *nl)
 }
 
 /* Routing table change via netlink interface. */
+#if 0
 static int
 netlink_route(int cmd, int family, void *dest, int length, void *gate,
 	      int index, int zebra_flags, int table)
@@ -1415,6 +1416,7 @@ netlink_route(int cmd, int family, void *dest, int length, void *gate,
 
 	return 0;
 }
+#endif
 
 /* This function takes a nexthop as argument and adds
  * the appropriate netlink attributes to an existing
